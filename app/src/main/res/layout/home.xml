@@ -1,0 +1,224 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    tools:context="com.spendingmoneytracker.Home"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp"
+    android:layout_marginBottom="70dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:id="@+id/linearLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:id="@+id/hostelimage"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_weight="0.25"
+            android:src="@drawable/hostel"/>
+        <ImageView
+            android:id="@+id/entertainmentimage"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_weight="0.25"
+            android:src="@drawable/enter"/>
+        <ImageView
+            android:id="@+id/messimage"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_weight="0.25"
+            android:src="@drawable/mess"/>
+        <ImageView
+            android:id="@+id/rechargesimage"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_weight="0.25"
+            android:src="@drawable/recharges"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:id="@+id/wifiimage"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_weight="0.25"
+            android:src="@drawable/wifi"/>
+        <ImageView
+            android:id="@+id/transportationimage"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_weight="0.25"
+            android:src="@drawable/transit"/>
+        <ImageView
+            android:id="@+id/partyimage"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_weight="0.25"
+            android:src="@drawable/drinks"/>
+        <ImageView
+            android:id="@+id/shoppingimage"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_weight="0.25"
+            android:src="@drawable/shopping"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:id="@+id/utilitiesimage"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginLeft="10dp"
+
+            android:src="@drawable/utilities"/>
+        <ImageView
+            android:id="@+id/otherimage"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginLeft="25dp"
+
+            android:src="@drawable/others"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu23"
+        android:layout_above="@+id/linearLayout23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        fab:menu_fab_size="normal"
+        fab:menu_showShadow="true"
+        fab:menu_shadowColor="#66000000"
+        fab:menu_shadowRadius="4dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="3dp"
+        fab:menu_colorNormal="#DA4336"
+        fab:menu_colorPressed="#E75043"
+        fab:menu_colorRipple="#99FFFFFF"
+        fab:menu_animationDelayPerItem="50"
+        fab:menu_icon="@drawable/fab_add"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_labels_margin="0dp"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_paddingTop="4dp"
+        fab:menu_labels_paddingRight="8dp"
+        fab:menu_labels_paddingBottom="4dp"
+        fab:menu_labels_paddingLeft="8dp"
+        fab:menu_labels_padding="8dp"
+        fab:menu_labels_textColor="#FFFFFF"
+        fab:menu_labels_textSize="14sp"
+        fab:menu_labels_cornerRadius="3dp"
+        fab:menu_labels_colorNormal="#333333"
+        fab:menu_labels_colorPressed="#444444"
+        fab:menu_labels_colorRipple="#66FFFFFF"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_ellipsize="none"
+        fab:menu_labels_maxLines="-1"
+
+        fab:menu_labels_position="left"
+        fab:menu_openDirection="up"
+        fab:menu_backgroundColor="@android:color/transparent"
+
+        fab:menu_fab_show_animation="@anim/my_show_animation"
+        fab:menu_fab_hide_animation="@anim/my_hide_animation"
+        android:layout_alignParentEnd="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/mexpense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_cash"
+            fab:fab_size="mini"
+            fab:fab_label="Add Expense" />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/minc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_addmoney"
+            fab:fab_size="mini"
+            fab:fab_label="Add Income" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:translationZ="5dp"
+        android:elevation="25dp"
+        android:id="@+id/linearLayout23">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Balance "
+                    android:textColor="@android:color/white"
+
+
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/belowBalance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="50"
+                android:text="7880"
+                android:textAlignment="viewEnd"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/chalk"
+    tools:context="com.spendingmoneytracker.StatsDetails">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TRANSACTION DETAILS"
+
+        android:padding="10dp"
+        android:background="@android:color/holo_orange_light"
+        android:textColor="@android:color/white"
+        android:elevation="10dp"
+        android:textSize="20dp"
+
+
+        android:drawablePadding="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EXPENSE NAME:"
+            android:textSize="18dp"
+            android:textColor="@android:color/white"
+            android:fontFamily="casual"/>
+        <TextView
+            android:id="@+id/sname"
+            android:fontFamily="casual"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="expemse"
+            android:textColor="@android:color/holo_orange_dark"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CATEGORY:"
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:fontFamily="casual"/>
+            <TextView
+                android:id="@+id/scat"
+                android:fontFamily="casual"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="expemse"
+                android:textColor="@android:color/holo_orange_dark"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AMOUNT:"
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:fontFamily="casual"/>
+            <TextView
+                android:id="@+id/samt"
+                android:fontFamily="casual"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="expemse"
+                android:textColor="@android:color/holo_orange_dark"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DATE:"
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:fontFamily="casual"/>
+            <TextView
+                android:id="@+id/sdat"
+                android:fontFamily="casual"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="expemse"
+                android:textColor="@android:color/holo_orange_dark"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sdel"
+
+     android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="300dp"
+        android:text="DELETE"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:fontFamily="monospace"
+
+        android:background="@android:color/holo_red_light"/>
+
+
+
+
+</LinearLayout>

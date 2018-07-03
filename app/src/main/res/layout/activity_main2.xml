@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.spendingmoneytracker.Main2Activity"
+    android:orientation="vertical"
+ >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="190dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.1"
+                android:id="@+id/acback"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0.7"
+                android:text="Add Cash"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+          android:id="@+id/add_money_text"
+            android:layout_marginTop="30dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_attach_money_black_24dp"
+            android:hint="Enter Amount"
+            android:inputType="number"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="30dp" />
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/submiticon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"
+            android:elevation="10dp"
+
+            android:src="@drawable/ic_action_submit"
+            app:backgroundTint="@android:color/background_light" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <ImageView
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" android:src="@drawable/ic_assessment_black_24dp"/>
+        <EditText
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="Enter Source"
+            android:id="@+id/source"
+            android:textSize="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <ImageView
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" android:src="@drawable/ic_view_headline_black_24dp"/>
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="15dp"
+             android:layout_marginLeft="15dp"
+
+             android:text="Select Category"
+             android:textSize="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+    <android.support.v7.widget.AppCompatSpinner
+        android:gravity="right"
+        android:layout_width="300dp"
+        android:layout_marginLeft="50dp"
+        android:layout_height="40dp"
+        android:id="@+id/in_spinner"
+
+        ></android.support.v7.widget.AppCompatSpinner>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:id="@+id/setdateimage"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" android:src="@drawable/ic_event_available_black_24dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/setdate"
+            android:text="Set Date"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
